@@ -1,0 +1,18 @@
+START
+     INPUT days_since_watering
+     INPUT leaves_droopy
+     INPUT is_sunny
+
+     IF days_since_watering > 2 
+THEN OUTPUT "Basil runs on water, not vibes"
+     ENDIF
+
+     IF leaves_droopy = "yes" 
+THEN OUTPUT  "Water now"
+     ENDIF
+
+     IF is_sunny = "yes" AND days_since_watering > 1 
+THEN OUTPUT "sun + basil = water every morning"
+     ENDIF
+
+END
